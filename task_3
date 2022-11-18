@@ -21,4 +21,4 @@ int Akk(int m, int n)
         int m = int.Parse(Console.ReadLine()?? "0");
         Console.Write(Akk(m, n));
 
-Console.WriteLine(Akk(m, n));
+
