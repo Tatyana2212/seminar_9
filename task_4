@@ -1,0 +1,19 @@
+/*4 "Написать программу показывающие первые N чисел, 
+для которых каждое следующее равно сумме двух предыдущих.
+Первые два элемента последовательности задаются пользователем.*/
+
+void ArrayFibonacci(int N, int a, int b)
+{
+    Console.Write($"{a}  ");
+    if (N > 1)
+        ArrayFibonacci(N - 1, b, a+b);
+}
+
+Console.Write("Введите quantity of numbers in N: ");
+int N = int.Parse(Console.ReadLine() ?? "0");
+Console.Write("Введите a: ");
+int a = int.Parse(Console.ReadLine() ?? "0");
+Console.Write("Введите b: ");
+int b = int.Parse(Console.ReadLine() ?? "0");
+
+ArrayFibonacci(N, a, b);
